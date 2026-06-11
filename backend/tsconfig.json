@@ -2,7 +2,6 @@
   "compilerOptions": {
     "rootDir": ".",
     "outDir": "./dist",
-    "noEmit": true,
 
     "target": "ES2022",
     "module": "ESNext",
@@ -25,7 +24,6 @@
     "skipLibCheck": true,
     "esModuleInterop": true,
     "resolveJsonModule": true,
-    "allowImportingTsExtensions": true,
   },
   "exclude": ["src/node_modules", "dist"],
   "include": ["**/*"],

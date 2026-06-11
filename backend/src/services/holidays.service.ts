@@ -1,6 +1,6 @@
 import { pool } from "../db/postgres.js";
 import * as cheerio from "cheerio";
-import type { Holiday } from "../types/optimizer.types";
+import type { Holiday } from "../types/optimizer.types.js";
 
 // Getter: Fetch local database holidays
 export async function getInstitutionalHolidays(): Promise<Holiday[]> {

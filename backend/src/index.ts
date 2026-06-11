@@ -1,9 +1,9 @@
 import express from "express";
-import connectDB from "./db/postgres";
+import connectDB from "./db/postgres.js";
 import cors from "cors";
-import recommendationRoutes from "./routes/recommendation.routes";
+import recommendationRoutes from "./routes/recommendation.routes.js";
 import dotenv from "dotenv";
-import holidayRoutes from "./routes/utils.routes";
+import holidayRoutes from "./routes/utils.routes.js";
 
 dotenv.config();
 

@@ -1,4 +1,4 @@
-import { pool } from "../src/db/postgres.ts";
+import { pool } from "../src/db/postgres.js";
 
 async function runMigrations() {
   try {

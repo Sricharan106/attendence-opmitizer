@@ -3,7 +3,7 @@ import {
   type Recommendation,
   type Holiday,
   type AttendanceRecord,
-} from "../types/optimizer.types";
+} from "../types/optimizer.types.js";
 
 import {
   getWeekNumber,
@@ -12,7 +12,7 @@ import {
   simulateLeave,
   formatDate,
   getWorkStreakLength,
-} from "../utils/scoringEngineUtils";
+} from "../utils/scoringEngineUtils.js";
 
 export function generateRecommendations(
   startDate: string,

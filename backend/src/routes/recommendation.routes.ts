@@ -1,6 +1,6 @@
 import { Router } from "express";
-import { getRecommendations } from "../controllers/recommendation.controller";
-import { syncTelanganaGovHolidays } from "../services/holidays.service";
+import { getRecommendations } from "../controllers/recommendation.controller.js";
+import { syncTelanganaGovHolidays } from "../services/holidays.service.js";
 
 const router = Router();
 

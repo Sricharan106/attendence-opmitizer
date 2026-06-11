@@ -1,4 +1,4 @@
-import { type CalendarDay, type Holiday } from "../types/optimizer.types";
+import { type CalendarDay, type Holiday } from "../types/optimizer.types.js";
 
 export function formatDate(date: Date): string {
   const year = date.getFullYear();

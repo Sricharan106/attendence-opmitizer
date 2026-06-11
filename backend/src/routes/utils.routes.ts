@@ -1,10 +1,10 @@
 import { Router } from "express";
-import { getAllHoildays } from "../controllers/holidays.controller";
+import { getAllHoildays } from "../controllers/holidays.controller.js";
 import {
   getAttendance,
   saveAttendance,
   getCurrentAttendance,
-} from "../controllers/attendence.controller";
+} from "../controllers/attendence.controller.js";
 
 const router = Router();
 
