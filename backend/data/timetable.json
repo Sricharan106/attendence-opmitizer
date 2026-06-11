@@ -1,0 +1,15 @@
+{
+  "monday": ["DSA", "DSA", "WebDev", "Math", "AI_ML", "AI_ML"],
+  "tuesday": ["WebDev", "WebDev", "OS", "OS", "Math", "Aptitude"],
+  "wednesday": ["AI_ML", "AI_ML", "DSA", "WebDev", "Library", "Library"],
+  "thursday": ["OS", "OS", "Math", "Math", "WebDev", "DSA"],
+  "friday": ["DSA", "WebDev", "AI_ML", "AI_ML", "OS", "OS"],
+  "saturday": [
+    "Placement_Prep",
+    "Placement_Prep",
+    "Lab",
+    "Lab",
+    "Sports",
+    "Free"
+  ]
+}
