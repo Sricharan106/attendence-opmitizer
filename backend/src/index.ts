@@ -14,13 +14,7 @@ const PORT = process.env.PORT || 5001;
 
 app.use(
   cors({
-    origin: (origin, callback) => {
-      if (!origin || origin.startsWith("http://localhost"))
-        return callback(null, true);
-      const clientUrl = process.env.CLIENT_URL;
-      if (clientUrl && origin === clientUrl) return callback(null, true);
-      return callback(new Error(`CORS policy: origin ${origin} not allowed`));
-    },
+    origin: true,
     credentials: true,
   }),
 );
