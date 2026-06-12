@@ -4,6 +4,7 @@ import { ThemeProvider } from "@/context/theme-provider";
 import CursorManager from "@/hooks/customCursor";
 import { BouncingCubes } from "./components/ui/loader"; // Uncommented this
 import CalendarView from "@/components/ui/calendar";
+import InstallAppButton from "./components/install";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -34,6 +35,7 @@ function App() {
             <header className="w-full flex justify-center py-4 border-b border-zinc-800 bg-teal-950 backdrop-blur-md top-0 z-50">
               <NavBar />
             </header>
+            <InstallAppButton />
             <div className="max-w-5xl mx-auto mt-2 min-h-[calc(100vh-64px)]">
               <CalendarView />
             </div>

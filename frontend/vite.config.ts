@@ -13,6 +13,12 @@ export default defineConfig({
       registerType: "autoUpdate",
       injectRegister: "inline",
       strategies: "generateSW", // 👈 CHANGED from injectManifest so it auto-creates the service worker
+
+      pwaAssets: {
+        disabled: false,
+        config: true,
+      },
+
       manifest: {
         name: "Attendance Tracker",
         short_name: "Attendify",
@@ -23,19 +29,27 @@ export default defineConfig({
         orientation: "portrait",
         icons: [
           {
-            src: "icon-192.png", // 👈 CHANGED: Ensure this file is a real 192x192px PNG in your /public folder
+            src: "android-chrome-192x192.png", // 👈 CHANGED: Ensure this file is a real 192x192px PNG in your /public folder
             sizes: "192x192",
             type: "image/png",
           },
           {
-            src: "icon-512.png", // 👈 CHANGED: Ensure this file is a real 512x512px PNG in your /public folder
+            src: "android-chrome-512x512.png", // 👈 CHANGED: Ensure this file is a real 512x512px PNG in your /public folder
             sizes: "512x512",
             type: "image/png",
           },
         ],
       },
+      workbox: {
+        globPatterns: ["**/*.{js,css,html,svg,png,ico}"],
+        cleanupOutdatedCaches: true,
+        clientsClaim: true,
+      },
+
       devOptions: {
         enabled: true,
+        navigateFallback: "index.html",
+        suppressWarnings: true,
         type: "module",
       },
     }),

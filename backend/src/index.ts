@@ -1,4 +1,5 @@
 import express from "express";
+import type { Request, Response } from "express";
 import connectDB from "./db/postgres.js";
 import cors from "cors";
 import recommendationRoutes from "./routes/recommendation.routes.js";
@@ -21,6 +22,8 @@ app.use(
 
 app.use("/", recommendationRoutes);
 app.use("/", holidayRoutes);
+
+app.get("/ping", (req: Request, res: Response) => res.status(200).send("pong"));
 
 connectDB().then(() => {
   app.listen(PORT, () => {

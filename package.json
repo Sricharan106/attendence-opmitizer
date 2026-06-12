@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "sharp": "^0.35.1",
+    "sharp-ico": "^0.1.5",
+    "workbox-core": "^7.4.1",
+    "workbox-window": "^7.4.1"
+  }
+}
