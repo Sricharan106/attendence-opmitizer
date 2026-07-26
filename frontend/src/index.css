@@ -238,7 +238,6 @@
 /* Holiday background events */
 .fc-bg-event {
     opacity: 0.4 !important;
-    background: #ef4444 !important;
 }
 
 .fc-bg-event.recommendation {
